@@ -1,8 +1,6 @@
 const express = require("express");
 const app = express();
 const server = require('http').Server(app);
-const parser = require('./parser')
-const countrie = require("./components/countrie/network")
 
 const router = require("./network/routes");
 app.use(express.json());
