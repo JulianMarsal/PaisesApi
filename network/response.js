@@ -2,8 +2,8 @@ const responseValues = require('./responseValues');
 
 exports.success = (req, res, countries, status)=>{
    res.status(status || 200).send({
-         error :"",
-         body: countries
+       body: countries,
+       error :"",
    });
 }
 
@@ -14,6 +14,7 @@ exports.error = (req, res, countries, status, details)=>{
     //Normalmente le daríamos al usuario un internal error para no darle mucha información, pero como acá estoy buscando que sea muy descriptivo, comente las función responseValues y le puse el error que arroja.
     res.status(status || 500).send({
         error : `${details}`,//responseValues(status),
-        body: ""
+        //Solo por visualización comento el body: pero debería estar al ser una response.
+        //body: ""
     })
 }

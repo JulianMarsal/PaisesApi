@@ -3,8 +3,6 @@ const app = express();
 const response = require('../../network/response');
 const controller = require('./controller');
 
-
-
 app.get('/', (req, res) => {
     controller.listCountries(req.query.V1,req.query.V2)
         .then(countries => {
