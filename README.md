@@ -15,4 +15,4 @@ Open a terminal in the main folder of the project and run the comand: npm instal
  
 # How to test it
  After running the project, type or paste in the browser, for example, the following url: http://localhost:5000/?V1=0&V2=1
-You can give it 2 values trow the url (V1 and V2), both of them can are float or integer, the API will look and return for countries that contain the values between V1 and V2.
+You can give it 2 values through the url (V1 and V2), both of them can are float or integer, the API will look and return for countries that contain the values between V1 and V2.
